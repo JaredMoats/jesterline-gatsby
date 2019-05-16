@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from "./../components/Layout";
+import Layout from "./../components/layout";
 import StandardLanding from "./../components/StandardLanding";
 import StandardPageView from "./../components/StandardPageView";
 import Prices from "./../components/Prices";
