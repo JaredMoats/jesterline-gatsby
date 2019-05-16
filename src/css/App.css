@@ -1,0 +1,65 @@
+/* Global styles */
+/* The smallest viewport I'm going to support is 320px wide */
+
+html {
+  height: 100%;
+}
+
+body {
+  /* font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
+  height: 100%;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #212528;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/*.app-container {
+  background-color: #E3E4E9;
+}*/
+
+.jl-red {
+  color: #c1363c;
+}
+
+.jl-yellow {
+  color: #ffdc00;
+}
+
+.is-jl-red {
+  background-color: #c1363c;
+  border-color: transparent;
+  color: #fff;
+}
+
+.section-header-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 112px;
+  margin-bottom: 97px;
+}
+
+.section-header {
+  margin-bottom: 97px;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+}

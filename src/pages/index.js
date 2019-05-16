@@ -1,21 +1,34 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from "./../components/layout"
+import Landing from "./../components/Landing"
+import GamesList from "./../components/GamesList"
+import Prices from "./../components/Prices"
+import Footer from "./../components/Footer"
+import "./../css/Home.css"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const Home = props => {
+  return (
+    <Layout>
+      <div className="home">
+        <Landing />
+        <div className="aboutBlurb">
+          <div className="divider" />
+          <h1>What is JesterLine?</h1>
+          <p>
+            JesterLine is West Virginia's FIRST high-end eSports and Virtual
+            Reality gaming center. We are a safe, family-friendly environment
+            where everyone can experience the best that eSports and Virtual
+            Reality has to offer, including local and global tournaments with
+            other gamers.
+          </p>
+          <div className="divider" />
+        </div>
+        <GamesList />
+        <Prices />
+        <Footer />
+      </div>
+    </Layout>
+  )
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default Home

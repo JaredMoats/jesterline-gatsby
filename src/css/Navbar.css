@@ -1,0 +1,99 @@
+/* Navbar styles */
+.navbar {
+  background-color: #272727;
+  height: 90px;
+}
+
+.navbar-item img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.navbar-brand {
+  margin-right: 50px;
+}
+
+.navbar-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.navbar-item.jl-active {
+  background-color: #000000;
+  color: #ff5e65;
+  border-bottom: 3px solid #c1363c;
+}
+
+a.navbar-item:hover {
+  background-color: #000000;
+  color: #ff5e65;
+  transition: 0.2s;
+}
+
+.nav-social-icons {
+  display: flex;
+  font-size: 30px;
+}
+
+.nav-social-icons a {
+  color: #ffffff;
+  margin-right: 30px;
+}
+
+.nav-social-icons a:hover {
+  color: #c1363c;
+  transition: 0.2s;
+}
+
+/* End navbar styles */
+
+/* Menu should be universal to tablet and mobile. */
+@media screen and (max-width: 1087px) {
+  /* Navbar styles. */
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar-item img {
+    max-height: 50px;
+  }
+
+  .logo-dimensions {
+    padding-top: 0;
+  }
+
+  /* Remove space between the navbar and the active menu */
+  .navbar-menu.is-active {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* Finish cleaning up the space between the navbar and the active menu */
+  .navbar-brand > .navbar-item {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* Keep background color constistent. Wanted to be white. */
+  .navbar-item.mobile-show {
+    background-color: #272727;
+  }
+
+  .navbar-item.jl-active {
+    background-color: #000000;
+  }
+
+  /* Remove needless padding around social icons */
+  .navbar-end > .navbar-item {
+    padding: 0;
+  }
+
+  .burger-white {
+    color: #ffffff;
+  }
+  /* End navbar styles */
+}

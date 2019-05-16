@@ -1,0 +1,142 @@
+/* Start GamesCards styles */
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.card {
+  background-color: #c1363c;
+  box-shadow: 2px 2px 5px 0px #272727;
+}
+
+.card-content p {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.card-image {
+  height: 304px;
+}
+
+.image {
+  height: 304px;
+}
+
+.game-card {
+  height: 463px;
+  width: 283px;
+  margin-right: 16px;
+  margin-bottom: 38px;
+}
+
+.game-title {
+  margin-bottom: 9px;
+}
+
+.game-divider {
+  width: 25%;
+  border-bottom: 3px solid #272727;
+  margin-bottom: 18px;
+}
+
+.game-platform {
+  margin-top: 9px;
+}
+
+@media screen and (max-width: 1282px) {
+  .cards-container {
+    margin-left: 9.9%;
+    margin-right: 9.9%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 0.99rem;
+  }
+
+  .card-content p {
+    font-size: 1.1rem;
+  }
+
+  .game-card {
+    height: 305.58px;
+    width: 186.78px;
+  }
+
+  .game-divider {
+    margin-top: 5.5px;
+    margin-bottom: 5.5px;
+  }
+
+  p.title.game-title {
+    margin-bottom: 5.94px;
+  }
+
+  .game-platform {
+    margin-top: 5.94px;
+  }
+
+  .card-image {
+    height: 200.64px;
+  }
+
+  .image {
+    height: 200.64px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .cards-container {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+
+  .card-content {
+    padding-top: 0.75rem;
+  }
+
+  .card-content p {
+    font-size: 0.825rem;
+  }
+
+  .game-card {
+    height: 245px;
+    width: 141px;
+  }
+
+  .game-divider {
+    margin-top: 4.5px;
+    margin-bottom: 4.5px;
+  }
+
+  p.title.game-title {
+    margin-bottom: 4.5px;
+  }
+
+  .game-platform {
+    margin-top: 4.5px;
+    margin-bottom: 3px;
+  }
+
+  .card-image {
+    height: 152px;
+  }
+
+  .image {
+    height: 152px;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+  .cards-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

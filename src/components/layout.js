@@ -7,44 +7,46 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import Navbar from "./Navbar"
 
-import Header from "./header"
-import "./layout.css"
+class Layout extends React.Component {
+  constructor(props) {
+    super(props)
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
-      </>
-    )}
-  />
-)
+    this.state = {
+      hamburgerClicked: false,
+      activePage: "home",
+    }
+  }
+
+  /* Helps keep track of if the hamburger menu is triggered or not */
+  onClickBurgerTop(string) {
+    /* Need to add the active class on the hamburger */
+    if (!this.state.hamburgerClicked) this.setState({ hamburgerClicked: true, activePage: string });
+    else this.setState({ hamburgerClicked: false, activePage: string });
+
+    window.scrollTo(0, 0);
+  }
+
+  onClickBurger() {
+    if (!this.state.hamburgerClicked) this.setState({ hamburgerClicked: true });
+    else this.setState({ hamburgerClicked: false });
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <Navbar
+          hamburgerClicked={ this.state.hamburgerClicked }
+          activePage={ this.state.activePage }
+          onClickBurgerTop={ (string) => this.onClickBurgerTop(string) }
+          onClickBurger={ () => this.onClickBurger() }
+        />
+        {this.props.children}
+      </React.Fragment>
+    )
+  }
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

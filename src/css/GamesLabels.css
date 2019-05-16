@@ -1,0 +1,107 @@
+/* Start GamesList section styles */
+.games-section-labels-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 98px;
+}
+
+.icon-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 183px;
+  margin-bottom: 30px;
+}
+
+.icon-name-container h1 {
+  font-size: 35px;
+}
+
+.icon-name-container a {
+  color: #212528;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-name-container a:hover {
+  transition: 0.2s;
+  color: #c1363c;
+}
+
+/* Solves an h1 specificity problem with the color on hover */
+.icon-name-container a:hover h1 {
+  transition: 0.2s;
+  color: #c1363c;
+}
+
+.icon-margin-zero {
+  margin-right: 0px;
+}
+
+.game-icon {
+  font-size: 100px;
+  margin-bottom: 65px;
+}
+
+.game-icon-active {
+  color: #c1363c;
+}
+
+@media screen and (max-width: 888px) {
+
+}
+
+/* End GamesList section styles */
+
+@media screen and (max-width: 1087px) {
+  .games-section-container > h1 {
+    padding-right: 3%;
+  }
+
+  .games-section-labels-container {
+    justify-content: space-around;
+  }
+
+  .icon-name-container {
+    margin-right: 10%;
+  }
+
+}
+
+@media screen and (max-width: 870px) {
+  .games-section-container > h1 {
+
+    padding-right: 0;
+  }
+
+  .game-icon {
+    font-size: 80px;
+  }
+
+  .icon-name-container {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .icon-name-container h1 {
+    font-size: 27px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .game-icon {
+    font-size: 60px;
+  }
+
+  .icon-name-container h1 {
+    font-size: 23px;
+  }
+
+  .game-icon {
+    margin-bottom: 40px;
+  }
+
+}

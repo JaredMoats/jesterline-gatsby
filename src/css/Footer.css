@@ -1,0 +1,42 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #272727;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer-container div {
+  padding: 30px 0px 30px 0px;
+  margin-right: 40px;
+}
+
+.footer-container h1 {
+  font-size: 20px;
+  color: white;
+}
+
+.footer-container p {
+  color: white;
+}
+
+.footer-container a {
+  text-decoration: underline;
+  color: white;
+}
+
+.footer-container a:hover {
+  /* A lighter jl-red to show up better against the black background */
+  color: #ff5e65;
+  transition: 0.2s;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
