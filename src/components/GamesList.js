@@ -3,6 +3,7 @@ import GamesLabels from "./GamesLabels";
 import GamesCards from "./GamesCards";
 import SectionHeading from "./SectionHeading";
 import "./../css/GamesList.css";
+/*import "bulma/css/bulma.css";*/
 import pcData from "./../data/pcGames";
 import switchData from "./../data/switchGames";
 import ps4Data from "./../data/ps4Games";

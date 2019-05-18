@@ -5,13 +5,14 @@ import StandardPageView from "./../components/StandardPageView";
 import Prices from "./../components/Prices";
 import Footer from "./../components/Footer";
 import pageContent from "./../data/howItWorksText";
+import howItWorksImage from "../images/page-images/how-it-works.jpg";
 
 const HowItWorks = () => {
     return(
       <Layout>
         <div className="standard-page-container">
           <StandardLanding
-            imageURL="/assets/images/page-images/how-it-works.jpg"
+            imageURL={howItWorksImage}
             headerTitle="How It Works"
             landingId="how-it-works"
           />

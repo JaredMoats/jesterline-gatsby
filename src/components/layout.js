@@ -25,7 +25,7 @@ class Layout extends React.Component {
     if (!this.state.hamburgerClicked) this.setState({ hamburgerClicked: true, activePage: string });
     else this.setState({ hamburgerClicked: false, activePage: string });
 
-    window.scrollTo(0, 0);
+    /*window.scrollTo(0, 0);*/
   }
 
   onClickBurger() {

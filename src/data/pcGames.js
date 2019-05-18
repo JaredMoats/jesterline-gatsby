@@ -1,6 +1,8 @@
+import ageOfEmpires from "../images/game-card-images/age-of-empires-2.jpg"
+
 export default [{
   title: 'Age of Empires II',
-  boxArt: '/assets/images/game-card-images/age-of-empires-2.jpg',
+  boxArt: ageOfEmpires,
   system: 'PC'
 }, {
   title: 'Anthem',
