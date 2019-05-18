@@ -1,33 +1,42 @@
+import donkeyKong from "../images/game-card-images/donkey-kong.jpg";
+import doubleDragon2 from "../images/game-card-images/double-dragon-2.png";
+import exciteBike from "../images/game-card-images/excite-bike.png";
+import fortnite from "../images/game-card-images/fortnite.jpg";
+import marioKart8 from "../images/game-card-images/mario-kart-8.jpg";
+import punchOut from "../images/game-card-images/punch-out.png";
+import superMarioBros from "../images/game-card-images/super-mario-bros.jpg";
+import superSmashBrosUltimate from "../images/game-card-images/super-smash-bros-ultimate.jpg";
+
 export default [{
   title: "Donky Kong",
-  boxArt: "/assets/images/game-card-images/donkey-kong.jpg",
+  boxArt: donkeyKong,
   system: "Switch"
 }, {
   title: "Double Dragon 2",
-  boxArt: "/assets/images/game-card-images/double-dragon-2.png",
+  boxArt: doubleDragon2,
   system: "Switch"
 }, {
   title: "Excite Bike",
-  boxArt: "/assets/images/game-card-images/excite-bike.png",
+  boxArt: exciteBike,
   system: "Switch"
 }, {
   title: "Fortnite",
-  boxArt: "/assets/images/game-card-images/fortnite.jpg",
+  boxArt: fortnite,
   system: "Switch"
 }, {
   title: "Mario Kart 8",
-  boxArt: "/assets/images/game-card-images/mario-kart-8.jpg",
+  boxArt: marioKart8,
   system: "Switch"
 }, {
   title: "Punch Out",
-  boxArt: "/assets/images/game-card-images/punch-out.png",
+  boxArt: punchOut,
   system: "Switch"
 }, {
   title: "Super Mario Bros.",
-  boxArt: "/assets/images/game-card-images/super-mario-bros.jpg",
+  boxArt: superMarioBros,
   system: "Switch"
 }, {
   title: "Super Smash Bros. Ultimate",
-  boxArt: "/assets/images/game-card-images/super-smash-bros-ultimate.jpg",
+  boxArt: superSmashBrosUltimate,
   system: "Switch"
 }];

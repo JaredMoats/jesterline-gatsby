@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
+import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import logo from "../images/logo/logo.png";
+
 import "../css/Navbar.css";
 
 class Navbar extends Component {
@@ -8,8 +11,8 @@ class Navbar extends Component {
   }
 
   render() {
-    let transformBurger = "navbar-burger is-active";
-    let displayMenuMobile = "navbar-menu is-active";
+    const transformBurger = "navbar-burger is-active";
+    const displayMenuMobile = "navbar-menu is-active";
 
     return (
       <nav
@@ -18,7 +21,7 @@ class Navbar extends Component {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item logo-dimensions"><img src="/assets/images/logo/logo.png" className="jl-logo"/></Link>
+          <Link to="/" className="navbar-item logo-dimensions"><img src={ logo } className="jl-logo"/></Link>
 
           <a
             role="button"
@@ -72,9 +75,9 @@ class Navbar extends Component {
           <div className="navbar-end">
             <div className="navbar-item">
               <span className="nav-social-icons navbar-item mobile-show">
-                <a href="https://www.facebook.com/JesterLineGT/"><i className="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/jesterlinegt/"><i className="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/JesterLineGT"><i className="fab fa-twitter-square"></i></a>
+                <a href="https://www.facebook.com/JesterLineGT/"><FaFacebookSquare /></a>
+                <a href="https://www.instagram.com/jesterlinegt/"><FaInstagram /></a>
+                <a href="https://twitter.com/JesterLineGT"><FaTwitterSquare /></a>
               </span>
             </div>
           </div>

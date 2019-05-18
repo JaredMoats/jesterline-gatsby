@@ -1,5 +1,8 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
+import mouseGraphic from "../images/prices/mouse-prices-image.png";
+import vrGraphic from "../images/prices/vr-prices-image.png";
+import partyGraphic from "../images/prices/party-prices-image.png";
 import "./../css/Prices.css";
 
 const Prices = () => {
@@ -11,7 +14,7 @@ const Prices = () => {
           <h2>e-Sports</h2>
           <div className="price-divider" />
           <img
-            src="/assets/images/prices/mouse-prices-image.png"
+            src={ mouseGraphic }
             alt="Gaming Mouse Graphic"
             className="price-graphic"
           />
@@ -26,7 +29,7 @@ const Prices = () => {
           <h2>Virtual Reality</h2>
           <div className="price-divider" />
           <img
-            src="/assets/images/prices/vr-prices-image.png"
+            src={ vrGraphic }
             alt="Virtual Reality Graphic"
             className="price-graphic"
           />
@@ -39,7 +42,7 @@ const Prices = () => {
           <h2>Parties & Events</h2>
           <div className="price-divider" />
           <img
-            src="/assets/images/prices/party-prices-image.png"
+            src={ partyGraphic }
             alt="Parties and Events Graphic"
             className="price-graphic"
           />
