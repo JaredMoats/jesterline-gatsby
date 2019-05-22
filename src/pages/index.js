@@ -1,9 +1,9 @@
-import React from "react"
-import Layout from "./../components/layout"
-import Landing from "./../components/Landing"
-import GamesList from "./../components/GamesList"
-import Prices from "./../components/Prices"
-import Footer from "./../components/Footer"
+import React from "react";
+import Layout from "./../components/layout";
+import Landing from "./../components/Landing";
+import GamesList from "./../components/GamesList";
+import Prices from "./../components/Prices";
+import Footer from "./../components/Footer";
 import landingBackground from "../images/page-images/landing-cover.jpg";
 import "./../css/Home.css"
 

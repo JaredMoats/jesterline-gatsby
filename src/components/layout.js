@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import MetaData from "./MetaData"
 import PropTypes from "prop-types"
 import Navbar from "./Navbar"
 
@@ -36,6 +37,7 @@ class Layout extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <MetaData/>
         <Navbar
           hamburgerClicked={ this.state.hamburgerClicked }
           activePage={ this.state.activePage }
